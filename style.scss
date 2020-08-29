@@ -13,7 +13,10 @@ body {
   font-family: var(--OpenSans);
   line-height: 2;
 }
-.curve {
+.curveMobile {
+  display: none;
+}
+.curveDesktop {
   width: 100%;
 }
 .attribution {
@@ -93,7 +96,11 @@ body {
 }
 .ctaSecction__text {
   font-size: 16px;
-  margin: 1rem 18rem;
+  width: 45%;
+  margin: 0 auto;
+}
+.ctaSecction__image {
+  max-width: 100%;
 }
 .button--filled {
   background: var(--Pink);
@@ -128,6 +135,7 @@ body {
 }
 .feature {
   background: #f6fbff;
+  height: fit-content;
 }
 .feature__box {
   flex-direction: row-reverse;
@@ -135,13 +143,19 @@ body {
   padding: 3em;
 }
 .feature__image {
-  width: 45%;
+  margin-top: 50px;
+  max-width: 45%;
+}
+.feature__text {
+  height: 250px;
 }
 .feature__descriptionBox {
   width: 44%;
 }
 .feature--reverse {
   background: white;
+  padding: 3em 8em;
+  width: 100%;
 }
 .contactSecction {
   background: var(--VeryDarkCyan);
@@ -205,3 +219,4 @@ body {
   margin-right: 20px;
   border-radius: 10px;
 }
+@import "./responsive";
