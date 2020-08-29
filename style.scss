@@ -42,6 +42,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.ctaBar__logo {
+  width: 22%;
+}
 .button {
   text-decoration: none;
   border: 1px solid var(--Pink);
@@ -71,11 +74,14 @@ body {
 .countersSecction {
   height: fit-content;
 }
+.countersSecction {
+  margin-bottom: 50px;
+}
 .ctaSecction__box,
 .countersSecction__list,
 .contactSecction__box {
   padding: 5em 0;
-  max-width: 75%;
+  max-width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -100,7 +106,7 @@ body {
   margin: 0 auto;
 }
 .ctaSecction__image {
-  max-width: 100%;
+  max-width: 90%;
 }
 .button--filled {
   background: var(--Pink);
@@ -109,7 +115,7 @@ body {
   border-radius: 50px;
   box-shadow: 0 5px 15px 0px rgba(#adadad, 0.8);
   margin: 20px 0;
-  height: 60px;
+  height: 70px;
   width: 300px;
 }
 .countersSecction__list {
