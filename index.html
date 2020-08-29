@@ -9,6 +9,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
@@ -77,15 +81,15 @@
           </div>
         </div>
       </div>
-      
-      <div class="feature">
+      <img class="curve" src="./images/bg-section-bottom-desktop-2.svg" alt="divider image">
+      <div class="feature feature--reverse">
         <div class="feature__box">
-          <img class="feature__image" src="./images/illustration-flowing-conversation.svg" alt="people talking image">
           <div class="feature__descriptionBox">
             <h2 class="feature__title">Flowing Conversations</h2>
             <p class="feature__text">You wouldn't paginate a conversation in real life, so why do it online? Our
               threads have just-in-time loading for a more natural flow.</p>
           </div>
+          <img class="feature__image" src="./images/illustration-flowing-conversation.svg" alt="people talking image">
         </div>
       </div>
       <img class="curve" src="./images/bg-section-top-desktop-2.svg" alt="divider image">
@@ -100,14 +104,17 @@
           </div>
         </div>
       </div>
+      <img class="curve" src="./images/bg-section-bottom-desktop-2.svg" alt="divider image">
       <div class="ctaSecction">
-        <div class="ctaSecction__textBox">
-          <h1 class="ctaSecction__title">
-            Ready To Build Your Community?
-          </h1>
-          <a href="#" class="button button--filled"
-            ><span class="button__body">Get Started For Free</span></a
-          >
+        <div class="ctaSecction__box">
+          <div class="ctaSecction__textBox">
+            <h1 class="ctaSecction__title">
+              Ready To Build Your Community?
+            </h1>
+            <a href="#" class="button button--filled"
+              ><span class="button__body">Get Started For Free</span></a
+            >
+          </div>
         </div>
       </div>
     </main>
@@ -119,35 +126,38 @@
           <p class="contactSecction__text">To recieve tips on how to grow your community,
             sign up to our weekly newsletter. We’ll never send you spam or pass on your
             email address</p>
-          <input class="contactSecction__input" type="email">
-          <a href="#" class="button button--filled"
+          <div class="contactSecction__form">
+            <input class="contactSecction__input" type="email">
+          <a href="#" class="button button--form"
             ><span class="button__body">Subscribe</span></a
           >
+          </div>
+          
         </form>
         <div class="contactSecction__contactBox">
-          <img class="contactSecction__logo" src="./images/logo.svg" alt="logo image">
-          <p class="contactSecction__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam,
-            hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+          <img class="contactSecction__logo" src="./images/footlogo.png" alt="logo image">
+          <p class="contactSecction__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
           <div class="contactSecction__info">
-            <img src="./images/icon-phone.svg" alt="phone icon">
-            <span>Phone: +1-543-123-4567</span>
+            <img  class="contactSecction__call" src="./images/icon-phone.svg" alt="phone icon">
+            <span class="contactSecction__data">Phone: +1-543-123-4567</span>
           </div>
           <div class="contactSecction__info">
-            <img src="./images/icon-email.svg" alt="email icon">
-            <span>example@huddle.com</span>
+            <img class="contactSecction__call" src="./images/icon-email.svg" alt="email icon">
+            <span class="contactSecction__data" >example@huddle.com</span>
           </div>
           <div class="contactSecction__socialMedia">
-            <a class="contactSecction__icon" href="#"><i></i>FB</a>
-            <a class="contactSecction__icon" href="#"><i></i>FB</a>
-            <a class="contactSecction__icon" href="#"><i></i>FB</a>
+            <a class="contactSecction__icon" href="#"><i class="fab fa-facebook"></i></a>
+            <a class="contactSecction__icon" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="contactSecction__icon" href="#"><i class="fab fa-twitter"></i></a>
           </div>
-          <p class="attribution">
-            Challenge by
-            <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-              >Frontend Mentor</a
-            >. Coded by <a class="attribution__link" href="#">Tania</a>.
-          </p>
+          
       </div>
     </footer>
+    <p class="attribution">
+      Challenge by
+      <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a class="attribution__link" href="#">Tania</a>.
+    </p>
   </body>
 </html>
